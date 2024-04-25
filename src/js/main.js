@@ -8,9 +8,14 @@ import Intro from "./scenes/intro.js"
 // Initialize Phaser game configuration
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    scene: [Intro, Scene1, Scene2]
+    width: 1280,
+    height: 720,
+    scene: [Intro, Scene1, Scene2],
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    },
+    antialias: true
 };
 
 // Create a new Phaser game instance
